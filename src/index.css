@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --gob-red: 348 80% 35%;
+    --gob-red-dark: 348 85% 28%;
+    --gob-red-light: 348 70% 45%;
+    --gob-gray-900: 220 15% 15%;
+    --gob-gray-800: 220 12% 22%;
+    --gob-gray-700: 220 10% 32%;
+    --gob-gray-600: 220 8% 45%;
+    --gob-gray-500: 220 6% 55%;
+    --gob-gray-400: 220 6% 70%;
+    --gob-gray-300: 220 8% 85%;
+    --gob-gray-200: 220 10% 92%;
+    --gob-gray-100: 220 15% 96%;
+    --gob-gray-50: 220 20% 98%;
+    --background: var(--gob-gray-100);
+    --foreground: var(--gob-gray-900);
+    --primary: var(--gob-red);
+    --primary-foreground: 0 0% 100%;
+    --sidebar-background: var(--gob-gray-900);
+    --sidebar-foreground: var(--gob-gray-200);
+    --sidebar-primary: var(--gob-red);
+    --sidebar-border: var(--gob-gray-700);
+    --border: var(--gob-gray-300);
+    --radius: .5rem;
+    --font-headlines: "Headlines", system-ui, sans-serif;
+    --font-cafe: "Cafe", system-ui, sans-serif;
+  }
+
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+  }
+}
+
+
+@font-face {
+  font-family: "Headlines";
+  src: url("/fonts/Headlines-SemiBold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cafe";
+  src: url("/fonts/Louis George Cafe.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
